@@ -39,9 +39,6 @@ Below is a visual representation of the relationship between authentication and 
 
 
 
-
-
-```markdown
 # User Deletion Functionality
 
 This document provides a combined script that integrates backend and frontend logic for implementing a user deletion functionality in a web application. The functionality allows authenticated users to delete other users by their username.
@@ -116,4 +113,4 @@ document.getElementById("delete-user-form").addEventListener("submit", async (ev
         alert(result.message || "Failed to delete user");
     }
 });
-```
+
