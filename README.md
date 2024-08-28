@@ -77,34 +77,32 @@ document.getElementById("delete-user-form").addEventListener("submit", async (ev
 
 
 
-### Markdown for Challenge Part 2 Explanation with Image
-
-
 ## Step 2: Challenge Part 2
 
 ### Explanation of the Requirement
 
-The requirement states: “This delete user functionality can be done after authentication.” Based on my understanding of authentication and authorization, this requirement has both merits and drawbacks.
+The requirement states: “This delete user functionality can be done after authentication.” Based on my understanding of authentication and authorization, this requirement has both advantages and disadvantages.
 
 #### Is It a Good or Bad Idea?
 
-**Good Idea:**
-- **Authentication-Only Requirement:** Ensuring that a user is authenticated before allowing any actions, such as deleting another user, is the basic security measure. It confirms that the user attempting the action is a legitimate user of the system.
-- **Simplified Access:** For scenarios where the system is designed with an assumption that all authenticated users have equal rights (e.g., in a system without role differentiation), allowing actions like deletion post-authentication might suffice.
+**Advantages:**
+- **Authentication Requirement:** Ensuring that a user is authenticated before allowing actions such as deleting another user is a fundamental security measure. It confirms that the user attempting the action is indeed a legitimate user of the system.
+- **Simplified Access:** In a system where all authenticated users have equal privileges, allowing such actions after authentication may be appropriate.
 
-**Bad Idea:**
-- **Lack of Authorization Check:** The primary concern with this approach is that it lacks an authorization check. Authentication verifies the identity of the user, but it does not verify whether the user has the right to perform a specific action. Allowing deletion solely after authentication can lead to security vulnerabilities, such as unauthorized users deleting other accounts.
-- **Risk of Abuse:** If all authenticated users are allowed to delete accounts, it could lead to potential misuse or accidental deletion of accounts by unauthorized users.
+**Disadvantages:**
+- **Lack of Authorization Check:** The major concern here is the absence of an authorization check. Authentication verifies the identity of the user, but it does not verify whether the user is permitted to perform a specific action. Allowing deletion solely after authentication can lead to unauthorized actions, such as users deleting accounts they should not have access to.
+- **Potential for Misuse:** If all authenticated users are allowed to delete accounts, it could result in abuse or accidental deletion of important accounts.
 
 ### Difference Between Authentication and Authorization
 
-**Authentication** is the process of verifying who a user is. It confirms the identity of the user by checking credentials like a username and password.
+**Authentication** is the process of verifying the identity of a user, typically through credentials like a username and password.
 
-**Authorization**, on the other hand, is the process of verifying what an authenticated user is allowed to do. It determines the permissions and access levels the user has within the system.
+**Authorization** is the process of determining what an authenticated user is allowed to do within the system, including permissions and access levels.
 
-**Summary:** While authentication is crucial for ensuring that a user is who they claim to be, authorization is equally important to ensure that the user has the correct permissions to perform specific actions. Therefore, relying solely on authentication for actions like deleting users is not recommended without incorporating proper authorization mechanisms.
+**Conclusion:** While authentication is essential for verifying a user's identity, authorization is crucial for ensuring that the user has the appropriate permissions to perform specific actions. Therefore, relying solely on authentication for actions like deleting users without incorporating proper authorization is not advisable.
 
 ### Diagram
 
-![Authentication and Authorization Process](./image.png)
+Below is a visual representation of the relationship between authentication and authorization:
 
+![Authentication and Authorization Process](./image.png)
