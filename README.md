@@ -77,6 +77,8 @@ document.getElementById("delete-user-form").addEventListener("submit", async (ev
 
 
 
+
+
 ## Step 2: Challenge Part 2
 
 ### Explanation of the Requirement
