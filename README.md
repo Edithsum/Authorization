@@ -77,6 +77,9 @@ document.getElementById("delete-user-form").addEventListener("submit", async (ev
 
 
 
+### Markdown for Challenge Part 2 Explanation with Image
+
+```markdown
 ## Step 2: Challenge Part 2
 
 ### Explanation of the Requirement
@@ -104,4 +107,4 @@ The requirement states: “This delete user functionality can be done after auth
 ### Diagram
 
 ![Authentication and Authorization Process](./image.png)
-
+```
