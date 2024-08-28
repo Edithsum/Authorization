@@ -101,10 +101,3 @@ The requirement states: “This delete user functionality can be done after auth
 **Authorization** is the process of determining what an authenticated user is allowed to do within the system, including permissions and access levels.
 
 **Conclusion:** While authentication is essential for verifying a user's identity, authorization is crucial for ensuring that the user has the appropriate permissions to perform specific actions. Therefore, relying solely on authentication for actions like deleting users without incorporating proper authorization is not advisable.
-
-### Diagram
-
-Below is a visual representation of the relationship between authentication and authorization:
-
-![Authentication and Authorization Process](./image.png)
-
